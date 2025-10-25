@@ -28,10 +28,9 @@ try:
     button.click()
 
 except Exception as error:
-    print(f'Произошла ошибка, вот её трэйсбэк: {error}')
+    print(f'Произошла ошибка, трэйсбэк: {error}')
 
 finally:
-    # успеваем скопировать код за 30 секунд
     time.sleep(30)
     keyboard.wait('esc')
     # закрываем браузер
@@ -39,7 +38,6 @@ finally:
     time.sleep(2)
     browser.quit()
 
-# не забываем оставить пустую строку в конце файла
 
 
 

@@ -16,7 +16,6 @@ y = int(y_element.text)
 
 sum = x + y
 
-
 select = Select(browser.find_element(By.ID, "dropdown"))
 select.select_by_value(str(sum)) # ищем элемент с текстом "Python"
 
@@ -24,8 +23,6 @@ submitButton = browser.find_element(By.XPATH, '//button[@type="submit"]')
 submitButton.click()
 
 time.sleep(30)
-#keyboard.wait('esc')
-# закрываем браузер
 browser.close()
 time.sleep(2)
 browser.quit()
